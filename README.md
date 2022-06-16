@@ -1,5 +1,34 @@
-# Web Service Example using GoLang
-Create own web server and mini service with [GoLang](http://golang.org)
+# Тестовое задение 
+
+
+## Основное 
+
+* Написать dockerfile 
+* Написать docker-compose который бы позволял запустить полтный стек а именно nginx , mysql , go app 
+
+## Будет плюсом 
+
+* Используя публичный Docker hub содать Github workflow который бы собирал Go app и выкладывал в сторидж
+* Предложить решение как можно можно было бы сделать реализацию TLS 
+
+
+
+
+
+## Критерии приемки 
+
+
+* Необходимо чтобы можно было запустить сборку кода одной командой 
+
+````bash
+docker-compose -f go.yaml up -d 
+````
+
+* После запуска можно обратиться к бекенду через Nginx 
+
+
+## Запуск сервиса 
+
 
 ## Usage
 ## 1. Import Database
@@ -22,12 +51,7 @@ $ go get golang.org/x/crypto/bcrypt
 ```sh
 $ go install github.com/yourusername/golang-webservice-example
 ```
-
 ## 3. Run Project
 ```sh
 $ $GOPATH/bin/golang-webservice-example
 ```
-
-Hope it useful!
-Thanks
-
