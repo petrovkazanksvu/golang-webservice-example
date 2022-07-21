@@ -7,7 +7,7 @@ WORKDIR /app
 COPY ./ ./
 RUN go mod download
 
-RUN go get -u github.com/go-sql-driver/mysql
+# RUN go get -u github.com/go-sql-driver/mysql
 
 RUN go build -o /docker-gs-ping main.go
 

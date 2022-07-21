@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 	"fmt"
-	"github.com/petrovkazanksvu/golang-webservice-example/controller"
-	"database/sql"
-	"github.com/go-sql-driver/mysql"
+	"github.com/insanrizky/golang-webservice-example/controller"
+	// "database/sql"
+	// "github.com/go-sql-driver/mysql"
 )
 
 func home_page(w http.ResponseWriter, r *http.Request) {
