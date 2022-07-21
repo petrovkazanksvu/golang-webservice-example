@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 	"fmt"
-	"github.com/insanrizky/golang-webservice-example/controller"
+	"github.com/petrovkazanksvu/golang-webservice-example/controller"
 	// "database/sql"
 	// "github.com/go-sql-driver/mysql"
 )
