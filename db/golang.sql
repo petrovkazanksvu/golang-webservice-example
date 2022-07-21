@@ -6,7 +6,7 @@
 -- Generation Time: 31 Jan 2017 pada 07.29
 -- Versi Server: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
-
+-- USE golang;
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 

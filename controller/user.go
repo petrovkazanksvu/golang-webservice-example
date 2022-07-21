@@ -9,7 +9,7 @@ import (
 
 	"encoding/json"
 
-	config "github.com/insanrizky/golang-webservice-example/config"
+	config "github.com/petrovkazanksvu/golang-webservice-example/config"
 	"golang.org/x/crypto/bcrypt"
 )
 
@@ -22,12 +22,16 @@ var db sql.DB               // var to connect with database
 var responjson ResponseJson // var to give responsejson
 
 func init() {
+	fmt.Println("Connecting to db1")
 	db = config.Connect() // connect DB while server is On
 }
 
 func SayHelloName(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
+	
 
+
+	w.Header().Set("Content-Type", "application/json")
+    fmt.Println("Connecting to db2")
 	r.ParseForm()
 	fmt.Println(r.Form)
 	fmt.Println("path", r.URL.Path) // give url path
@@ -47,6 +51,9 @@ func SayHelloName(w http.ResponseWriter, r *http.Request) {
 	}
 
 	json.NewEncoder(w).Encode(string(body)) // send response json
+
+
+
 }
 
 func InsertUser(w http.ResponseWriter, r *http.Request) {
